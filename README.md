@@ -8,7 +8,7 @@ node publish
 ```
 
 
-nmp Nexus 仓库推送脚本
+npm Nexus 仓库推送脚本
 
 自行配置相关字段及仓库地址
 ```
@@ -18,13 +18,13 @@ const CheckField = "authToken";  // 判断是否登录过的字段，因人而�
 const LoginCMD = `npm adduser -registry ${PREFIX}/repository/npm-hosted/`;
 const PublishCMD = `npm publish -registry ${PREFIX}/repository/npm-hosted/`;
 
-const gitignoreFile = ".gitignore";  // or .npmignore
+const gitignoreFile = ".npmignore";  // or .gitignore
 ```
 
-执行时将自动将脚本添加至 `.gitignore` 文件
+执行时将自动将脚本添加至 `.npmignore` 文件
 
 注意：`package.json` 需配置
 ```
  "type": "module",
 ```
-当然如果你不想这么做：可以将文件名后缀`.js`改成`.mjs`
+**当然如果你不想这么做**：可以将文件名后缀`.js`改成`.mjs`
