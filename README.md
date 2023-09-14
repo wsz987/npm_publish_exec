@@ -7,6 +7,7 @@ npm publish repository script
 node publish
 ```
 
+
 nmp Nexus 仓库推送脚本
 
 自行配置相关字段及仓库地址
@@ -21,3 +22,8 @@ const gitignoreFile = ".gitignore";  // or .npmignore
 ```
 
 执行时将自动将脚本添加至 `.gitignore` 文件
+
+注意：`package.json` 需配置
+```
+ "type": "module",
+```
