@@ -27,3 +27,4 @@ const gitignoreFile = ".gitignore";  // or .npmignore
 ```
  "type": "module",
 ```
+当然如果你不想这么做：可以将文件名后缀`.js`改成`.mjs`
