@@ -33,7 +33,7 @@ const login = {
 /** 获取当前执行文件名并添加忽略推送脚本 */
 const __filename = fileURLToPath(import.meta.url);
 const ignoreFile = path.basename(__filename);
-const gitignoreFile = ".gitignore";
+const gitignoreFile = ".npmignore"; // or .gitignore
 
 fs.access(gitignoreFile, fs.constants.F_OK, (err) => {
   if (err) {
